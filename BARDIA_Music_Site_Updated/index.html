@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111116">
+  <meta name="description" content="وب‌سایت رسمی موسیقی بردیا">
+  <title>BARDIA | وب‌سایت رسمی</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="./">BARDIA<span>.</span></a>
+      <nav>
+        <a href="#home">خانه</a>
+        <a href="#songs">آهنگ‌ها</a>
+        <a href="#about">درباره من</a>
+      </nav>
+      <span class="header-label">OFFICIAL MUSIC</span>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <section class="artist-hero">
+      <img class="artist-photo" src="assets/images/IMG_20261109_174520_420.jpg" alt="تصویر بردیا">
+      <div class="artist-copy">
+        <span class="eyebrow">✦ وب‌سایت رسمی خواننده</span>
+        <h1>بردیا</h1>
+        <p>به دنیای موسیقی من خوش آمدید.</p>
+        <a class="gold-link" href="#songs">شنیدن آهنگ‌ها <span>←</span></a>
+      </div>
+      <div class="hero-watermark" aria-hidden="true">B</div>
+    </section>
+
+    <section class="section" id="songs">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">DISCOGRAPHY</span>
+          <h2>تمام آهنگ‌ها</h2>
+        </div>
+        <span class="song-count" id="songCount">۰ آهنگ</span>
+      </div>
+
+      <label class="search-wrap">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="جست‌وجوی نام آهنگ..." autocomplete="off">
+      </label>
+
+      <div class="filters" role="group" aria-label="فیلتر آهنگ‌ها">
+        <button class="filter active" data-filter="all">همه آهنگ‌ها</button>
+        <button class="filter" data-filter="new">جدیدترین</button>
+        <button class="filter" data-filter="popular">محبوب‌ترین</button>
+      </div>
+
+      <div class="song-list" id="songList"></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <span class="eyebrow">ABOUT BARDIA</span>
+      <h2>درباره بردیا</h2>
+      <p>اینجا وب‌سایت رسمی بردیاست؛ جایی برای شنیدن آثار، دیدن کاورها و دنبال کردن آهنگ‌های جدید.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <strong>BARDIA<span>.</span></strong>
+    <p>وب‌سایت رسمی موسیقی بردیا</p>
+    <small>© تمامی حقوق آثار متعلق به صاحب اثر است.</small>
+  </footer>
+
+  <section class="music-player" aria-label="پخش‌کننده موسیقی">
+    <div class="player-inner container">
+      <img id="playerCover" src="assets/images/cover-placeholder.svg" alt="" class="player-cover">
+      <div class="player-meta">
+        <strong id="playerTitle">هنوز آهنگی انتخاب نشده</strong>
+        <span>بردیا</span>
+      </div>
+      <div class="player-controls">
+        <button id="previousButton" aria-label="آهنگ قبلی">⏮</button>
+        <button id="playButton" class="play-main" aria-label="پخش یا توقف">▶</button>
+        <button id="nextButton" aria-label="آهنگ بعدی">⏭</button>
+      </div>
+      <div class="player-progress">
+        <span id="currentTime">۰:۰۰</span>
+        <input id="seekBar" type="range" min="0" max="100" value="0" aria-label="موقعیت پخش">
+        <span id="duration">۰:۰۰</span>
+      </div>
+    </div>
+  </section>
+
+  <audio id="audio"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

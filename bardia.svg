@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="600" viewBox="0 0 500 600">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#514047"/><stop offset="1" stop-color="#17171d"/></linearGradient></defs>
+<rect width="500" height="600" fill="url(#g)"/>
+<circle cx="250" cy="205" r="95" fill="#d6ad70" opacity=".18"/>
+<path d="M90 600c12-145 75-220 160-220s148 75 160 220" fill="#29252d"/>
+<circle cx="250" cy="220" r="83" fill="#b18b72"/>
+<path d="M166 213c0-100 45-135 99-135 70 0 104 52 82 132-24-28-55-42-95-43-28 0-56 18-86 46z" fill="#17151a"/>
+<text x="250" y="555" fill="#d6ad70" font-family="Arial" font-size="34" font-weight="bold" text-anchor="middle" letter-spacing="5">BARDIA</text>
+</svg>
